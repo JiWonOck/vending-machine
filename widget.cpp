@@ -43,20 +43,6 @@ void Widget::changeMoney(int diff)
     }
 }
 
-void Widget::countMoney(int std){
-    QString temp="";
-
-    if (money / std >= 1){
-        temp += QString::number(std);
-        temp += "원=";
-        temp += QString::number(money / std);
-        temp += "개 ";
-        changeMoney(0 - (std * (int)(money / std)));
-        //ui->label->setText(ui->label->text()+temp);
-    }
-}
-
-
 void Widget::on_pbCoin10_clicked()
 {
     changeMoney(10);

@@ -18,7 +18,6 @@ public:
     ~Widget();
     int money{0};
     void changeMoney(int diff);
-    void countMoney(int std);
 
 private slots:
     void on_pbCoin10_clicked();
